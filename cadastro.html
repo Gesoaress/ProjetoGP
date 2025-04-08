@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <header class="menu">
+        <div> 
+            <a class="logo" href="index.html"><img src="img/LogoGDP.PNG" alt="Logogp" id="logogp"></a>
+        </div>
+        <nav class="menu-gp">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="campos-cadastro">
+        <div class="cadastro-img">
+            <img src="img/LogoGP(1).png" alt="Ilustração cadastro">
+        </div>
+    
+        <div class="form-container">
+            <h1>Cadastre-se</h1>
+            <p>Preencha os campos abaixo para criar sua conta.</p>
+    
+            <div id="formulario_cadastro">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+    
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="CPF">CPF</label>
+                <input type="text" id="CPF" name="CPF" required maxlength="14" placeholder="000.000.000-00">
+    
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+    
+                <label for="birthday">Data de nascimento</label>
+                <input type="date" id="birthday" name="birthday" required>
+    
+                <label class="checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    Aceito os termos de uso
+                </label>
+    
+                <button type="button" onclick="CadastrarCliente()">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+    
+        
+
+<script src="script.js"></script>
+
+</body>
+</html>
