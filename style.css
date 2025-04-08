@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url(img/fundosite.png) no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 90px;
+    font-family: 'Nanum Gothic', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.menu {
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(to right, 
+                rgba(0, 0, 0, 1) 25%, 
+                rgba(0, 0, 0, 1) 50%, 
+                rgba(0, 0, 0, 0) 80%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid rgba(255, 0, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+#logogp {
+    width: 75px;
+    margin-top: 10px;
+    height: auto;
+}
+
+.menu-gp ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu-gp li {
+    display: inline-block;
+}
+
+.menu-gp a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'cabin', sans-serif;
+    padding: 65px 30px;
+    transition: 0.3s;
+}
+
+.menu-gp a:hover {
+    color: #ff00c8;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobre-nos {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    border: 2px solid #ff00c8;
+    box-shadow: 0 0 15px rgba(255, 0, 200, 0.3);
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 1.8;
+    transition: 0.3s ease;
+    animation: fadeInUp 1s ease;
+}
+
+.sobre-nos h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff00c8;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.sobre-nos p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sobre-nos p strong {
+    color: #ff91e3;
+}
+
+.sobre-nos .assinatura {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    border-top: 1px solid #ff00c8;
+    padding-top: 20px;
+}
+
+.sobre-nos-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sobre-nos-img-left {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 200, 0.3);
+    flex-shrink: 0;
+}
+
+.sobre-nos-texto {
+    flex: 1;
+    min-width: 250px;
+}
+
+.sobre-nos-texto p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.sobre-nos-conteudo {
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.imagem-flutuante {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 200, 0.3);
+}
+
+@media (max-width: 768px) {
+    .imagem-flutuante {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 90%;
+    }
+
+    .sobre-nos-conteudo {
+        text-align: center;
+    }
+}
+
+
+
+.campos-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+    padding-top: 90px;
+    color: white;
+}
+
+.cadastro-img {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.cadastro-img img {
+    max-width: 100%;
+    max-height: 90%;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+.form-container {
+    flex: 1;
+    width: 100%;
+    padding: 60px 60px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container h1, 
+.form-container p {
+    text-align: center;
+}
+
+#formulario_cadastro {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario_cadastro input[type="text"],
+#formulario_cadastro input[type="email"],
+#formulario_cadastro input[type="password"],
+#formulario_cadastro input[type="date"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+}
+
+.checkbox {
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#formulario_cadastro input:focus {
+    outline: none;
+    border: 2px solid #ff00c8;
+    background-color: #fff0fa;
+}
+
+.checkbox input[type="checkbox"] {
+    accent-color: #ff00c8;
+    transform: scale(1.2);
+}
+
+
+#formulario_cadastro button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #ff00c8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#formulario_cadastro button:hover {
+    background-color: #d100a9;
+}
+
+
+
+
+.corpo {
+    height: calc(100vh - 90px);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), 
+                url('img/fundosite.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.corpo-conteudo h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.corpo-conteudo h2 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    text-shadow: 0 0 5px rgba(255, 0, 255, 0.3);
+}
+
+.btn-cta {
+    padding: 15px 30px;
+    background-color: #ff00c8;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(255, 0, 200, 0.3);
+}
+
+.btn-cta:hover {
+    background-color: #d100a9;
+    box-shadow: 0 0 20px rgba(255, 0, 200, 0.5);
+}
+
